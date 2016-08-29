@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KVZNotificationExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>KVZNotificationService.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>KVZTestNotification.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A1D89181D6D97BD0028BA79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0A5B0D021D6D463D008BE0E6</key>
 		<dict>
 			<key>primary</key>
@@ -23,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>0A5B0D261D6D463D008BE0E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A7A01481D741EF600F925FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

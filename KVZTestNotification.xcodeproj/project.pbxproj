@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4271551D72EA4D00EBC450 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4271541D72EA4D00EBC450 /* Intents.framework */; };
 		0A5B0D081D6D463D008BE0E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B0D071D6D463D008BE0E6 /* main.m */; };
 		0A5B0D0B1D6D463D008BE0E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B0D0A1D6D463D008BE0E6 /* AppDelegate.m */; };
 		0A5B0D0E1D6D463D008BE0E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B0D0D1D6D463D008BE0E6 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		0A5B0D161D6D463D008BE0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B0D141D6D463D008BE0E6 /* LaunchScreen.storyboard */; };
 		0A5B0D211D6D463D008BE0E6 /* KVZTestNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B0D201D6D463D008BE0E6 /* KVZTestNotificationTests.m */; };
 		0A5B0D2C1D6D463D008BE0E6 /* KVZTestNotificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B0D2B1D6D463D008BE0E6 /* KVZTestNotificationUITests.m */; };
+		0A5B0D3C1D6D4796008BE0E6 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5B0D3A1D6D4796008BE0E6 /* UserNotifications.framework */; };
+		0A7A014D1D741EF600F925FB /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A014C1D741EF600F925FB /* NotificationService.m */; };
+		0A7A01511D741EF600F925FB /* KVZNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A7A01491D741EF600F925FB /* KVZNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A7A01561D74256B00F925FB /* qiefm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7A01551D74256B00F925FB /* qiefm.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +37,35 @@
 			remoteGlobalIDString = 0A5B0D021D6D463D008BE0E6;
 			remoteInfo = KVZTestNotification;
 		};
+		0A7A014F1D741EF600F925FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A5B0CFB1D6D463D008BE0E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A7A01481D741EF600F925FB;
+			remoteInfo = KVZNotificationService;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0A1D892A1D6D97BD0028BA79 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A7A01511D741EF600F925FB /* KVZNotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A1D891D1D6D97BD0028BA79 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		0A1D891E1D6D97BD0028BA79 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		0A1D89211D6D97BD0028BA79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0A1D89231D6D97BD0028BA79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4271541D72EA4D00EBC450 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		0A5B0D031D6D463D008BE0E6 /* KVZTestNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVZTestNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5B0D071D6D463D008BE0E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5B0D091D6D463D008BE0E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +82,14 @@
 		0A5B0D271D6D463D008BE0E6 /* KVZTestNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVZTestNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5B0D2B1D6D463D008BE0E6 /* KVZTestNotificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVZTestNotificationUITests.m; sourceTree = "<group>"; };
 		0A5B0D2D1D6D463D008BE0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5B0D3A1D6D4796008BE0E6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0A5B0D3B1D6D4796008BE0E6 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		0A7A01441D741A5F00F925FB /* KVZTestNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KVZTestNotification.entitlements; sourceTree = "<group>"; };
+		0A7A01491D741EF600F925FB /* KVZNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KVZNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7A014B1D741EF600F925FB /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		0A7A014C1D741EF600F925FB /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		0A7A014E1D741EF600F925FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7A01551D74256B00F925FB /* qiefm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qiefm.png; path = ../../../Desktop/qiefm.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4271551D72EA4D00EBC450 /* Intents.framework in Frameworks */,
+				0A5B0D3C1D6D4796008BE0E6 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,16 +116,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A7A01461D741EF600F925FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1D891C1D6D97BD0028BA79 /* KVZNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D891D1D6D97BD0028BA79 /* NotificationViewController.h */,
+				0A1D891E1D6D97BD0028BA79 /* NotificationViewController.m */,
+				0A1D89201D6D97BD0028BA79 /* MainInterface.storyboard */,
+				0A1D89231D6D97BD0028BA79 /* Info.plist */,
+			);
+			path = KVZNotificationExtension;
+			sourceTree = "<group>";
+		};
 		0A5B0CFA1D6D463D008BE0E6 = {
 			isa = PBXGroup;
 			children = (
 				0A5B0D051D6D463D008BE0E6 /* KVZTestNotification */,
 				0A5B0D1F1D6D463D008BE0E6 /* KVZTestNotificationTests */,
 				0A5B0D2A1D6D463D008BE0E6 /* KVZTestNotificationUITests */,
+				0A1D891C1D6D97BD0028BA79 /* KVZNotificationExtension */,
+				0A7A014A1D741EF600F925FB /* KVZNotificationService */,
 				0A5B0D041D6D463D008BE0E6 /* Products */,
+				0A5B0D391D6D4796008BE0E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +156,7 @@
 				0A5B0D031D6D463D008BE0E6 /* KVZTestNotification.app */,
 				0A5B0D1C1D6D463D008BE0E6 /* KVZTestNotificationTests.xctest */,
 				0A5B0D271D6D463D008BE0E6 /* KVZTestNotificationUITests.xctest */,
+				0A7A01491D741EF600F925FB /* KVZNotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,12 +164,14 @@
 		0A5B0D051D6D463D008BE0E6 /* KVZTestNotification */ = {
 			isa = PBXGroup;
 			children = (
+				0A7A01441D741A5F00F925FB /* KVZTestNotification.entitlements */,
 				0A5B0D091D6D463D008BE0E6 /* AppDelegate.h */,
 				0A5B0D0A1D6D463D008BE0E6 /* AppDelegate.m */,
 				0A5B0D0C1D6D463D008BE0E6 /* ViewController.h */,
 				0A5B0D0D1D6D463D008BE0E6 /* ViewController.m */,
 				0A5B0D0F1D6D463D008BE0E6 /* Main.storyboard */,
 				0A5B0D121D6D463D008BE0E6 /* Assets.xcassets */,
+				0A7A01551D74256B00F925FB /* qiefm.png */,
 				0A5B0D141D6D463D008BE0E6 /* LaunchScreen.storyboard */,
 				0A5B0D171D6D463D008BE0E6 /* Info.plist */,
 				0A5B0D061D6D463D008BE0E6 /* Supporting Files */,
@@ -140,6 +205,26 @@
 			path = KVZTestNotificationUITests;
 			sourceTree = "<group>";
 		};
+		0A5B0D391D6D4796008BE0E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A4271541D72EA4D00EBC450 /* Intents.framework */,
+				0A5B0D3A1D6D4796008BE0E6 /* UserNotifications.framework */,
+				0A5B0D3B1D6D4796008BE0E6 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A7A014A1D741EF600F925FB /* KVZNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				0A7A014B1D741EF600F925FB /* NotificationService.h */,
+				0A7A014C1D741EF600F925FB /* NotificationService.m */,
+				0A7A014E1D741EF600F925FB /* Info.plist */,
+			);
+			path = KVZNotificationService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +235,12 @@
 				0A5B0CFF1D6D463D008BE0E6 /* Sources */,
 				0A5B0D001D6D463D008BE0E6 /* Frameworks */,
 				0A5B0D011D6D463D008BE0E6 /* Resources */,
+				0A1D892A1D6D97BD0028BA79 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A7A01501D741EF600F925FB /* PBXTargetDependency */,
 			);
 			name = KVZTestNotification;
 			productName = KVZTestNotification;
@@ -196,6 +283,23 @@
 			productReference = 0A5B0D271D6D463D008BE0E6 /* KVZTestNotificationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0A7A01481D741EF600F925FB /* KVZNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A7A01521D741EF600F925FB /* Build configuration list for PBXNativeTarget "KVZNotificationService" */;
+			buildPhases = (
+				0A7A01451D741EF600F925FB /* Sources */,
+				0A7A01461D741EF600F925FB /* Frameworks */,
+				0A7A01471D741EF600F925FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVZNotificationService;
+			productName = KVZNotificationService;
+			productReference = 0A7A01491D741EF600F925FB /* KVZNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,9 +311,14 @@
 				TargetAttributes = {
 					0A5B0D021D6D463D008BE0E6 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Z3T74M8F47;
+						DevelopmentTeam = NUY548U9D8;
 						DevelopmentTeamName = "杨梦晓 湛 (Personal Team)";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					0A5B0D1B1D6D463D008BE0E6 = {
 						CreatedOnToolsVersion = 8.0;
@@ -224,6 +333,11 @@
 						DevelopmentTeamName = "杨梦晓 湛 (Personal Team)";
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0A5B0D021D6D463D008BE0E6;
+					};
+					0A7A01481D741EF600F925FB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NUY548U9D8;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -243,6 +357,7 @@
 				0A5B0D021D6D463D008BE0E6 /* KVZTestNotification */,
 				0A5B0D1B1D6D463D008BE0E6 /* KVZTestNotificationTests */,
 				0A5B0D261D6D463D008BE0E6 /* KVZTestNotificationUITests */,
+				0A7A01481D741EF600F925FB /* KVZNotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7A01561D74256B00F925FB /* qiefm.png in Resources */,
 				0A5B0D161D6D463D008BE0E6 /* LaunchScreen.storyboard in Resources */,
 				0A5B0D131D6D463D008BE0E6 /* Assets.xcassets in Resources */,
 				0A5B0D111D6D463D008BE0E6 /* Main.storyboard in Resources */,
@@ -266,6 +382,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0A5B0D251D6D463D008BE0E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A7A01471D741EF600F925FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,6 +424,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A7A01451D741EF600F925FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7A014D1D741EF600F925FB /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,9 +445,22 @@
 			target = 0A5B0D021D6D463D008BE0E6 /* KVZTestNotification */;
 			targetProxy = 0A5B0D281D6D463D008BE0E6 /* PBXContainerItemProxy */;
 		};
+		0A7A01501D741EF600F925FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A7A01481D741EF600F925FB /* KVZNotificationService */;
+			targetProxy = 0A7A014F1D741EF600F925FB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0A1D89201D6D97BD0028BA79 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A1D89211D6D97BD0028BA79 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		0A5B0D0F1D6D463D008BE0E6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,10 +570,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KVZTestNotification/KVZTestNotification.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NUY548U9D8;
 				INFOPLIST_FILE = KVZTestNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kvz.KVZTestNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = qzk.KVZTestNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -437,9 +586,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KVZTestNotification/KVZTestNotification.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NUY548U9D8;
 				INFOPLIST_FILE = KVZTestNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kvz.KVZTestNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = qzk.KVZTestNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -490,6 +642,36 @@
 			};
 			name = Release;
 		};
+		0A7A01531D741EF600F925FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = NUY548U9D8;
+				INFOPLIST_FILE = KVZNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qzk.KVZTestNotification.KVZNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0A7A01541D741EF600F925FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = NUY548U9D8;
+				INFOPLIST_FILE = KVZNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qzk.KVZTestNotification.KVZNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -509,6 +691,7 @@
 				0A5B0D321D6D463D008BE0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A5B0D331D6D463D008BE0E6 /* Build configuration list for PBXNativeTarget "KVZTestNotificationTests" */ = {
 			isa = XCConfigurationList;
@@ -517,12 +700,22 @@
 				0A5B0D351D6D463D008BE0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A5B0D361D6D463D008BE0E6 /* Build configuration list for PBXNativeTarget "KVZTestNotificationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A5B0D371D6D463D008BE0E6 /* Debug */,
 				0A5B0D381D6D463D008BE0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A7A01521D741EF600F925FB /* Build configuration list for PBXNativeTarget "KVZNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A7A01531D741EF600F925FB /* Debug */,
+				0A7A01541D741EF600F925FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
